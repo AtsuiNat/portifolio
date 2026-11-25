@@ -1157,17 +1157,11 @@ html.liberado h1.nome-brilho {
     width: 100%;
     max-width: 100%;
     margin-inline: auto;
-    grid-template-columns: auto max-content;
+    grid-template-columns: max-content auto;
     align-items: center;
     justify-content: center;
     gap: clamp(1.6rem, 3vw, 3.2rem);
     padding-block: 1.6rem 2.2rem;
-  }
-
-  .hero::after {
-    right: auto;
-    left: -8rem;
-    top: -8rem;
   }
 
   .hero-texto {
@@ -1188,7 +1182,6 @@ html.liberado h1.nome-brilho {
   }
 
   .hero .retrato {
-    order: -1;
     width: 16.75rem;
     margin: 0;
     align-self: center;

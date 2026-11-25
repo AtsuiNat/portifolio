@@ -156,22 +156,9 @@ function destinoDe(id) {
 
 function ajustarFim() {
   const fecho = document.querySelector(".fecho");
-  const titulo = document.querySelector("#contato h2");
-  if (!fecho || !titulo) return;
+  if (!fecho) return;
   document.body.style.paddingBottom = "0px";
-  fecho.style.minHeight = "0px";
-  const barra = document.querySelector(".barra").offsetHeight;
-  const topo = fecho.getBoundingClientRect().top + window.scrollY;
-  const tituloY = titulo.getBoundingClientRect().top + window.scrollY;
-  const destino = Math.max(0, tituloY - barra - 16);
-  const altura = destino + window.innerHeight - topo;
-  fecho.style.minHeight = `${Math.max(0, Math.ceil(altura))}px`;
-  const maximo = document.documentElement.scrollHeight - window.innerHeight;
-  const folgaNoFim = tituloY - maximo - barra;
-  const sobra = 16 - folgaNoFim;
-  if (sobra > 1) {
-    fecho.style.minHeight = `${Math.max(0, Math.ceil(altura - sobra))}px`;
-  }
+  fecho.style.minHeight = "";
 }
 
 let viagem = 0;

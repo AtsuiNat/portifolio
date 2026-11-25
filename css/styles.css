@@ -703,8 +703,11 @@ button:focus-visible {
 
 .bento {
   display: grid;
-  align-items: start;
   gap: 1rem;
+}
+
+.bento > .sobre-texto {
+  grid-column: 1 / -1;
 }
 
 .bento > *,
@@ -1189,7 +1192,7 @@ html.liberado h1.nome-brilho {
   }
 
   .bento {
-    grid-template-columns: 1.15fr 0.85fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .grade-projetos {

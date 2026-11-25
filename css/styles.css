@@ -703,6 +703,7 @@ button:focus-visible {
 
 .bento {
   display: grid;
+  align-items: start;
   gap: 1rem;
 }
 

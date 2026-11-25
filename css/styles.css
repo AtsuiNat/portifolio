@@ -758,8 +758,8 @@ button:focus-visible {
 }
 
 .lista li:nth-child(1) .nivel { --enche: 100%; }
-.lista li:nth-child(2) .nivel { --enche: 64%; }
-.lista li:nth-child(3) .nivel { --enche: 34%; }
+.lista li:nth-child(2) .nivel { --enche: 36%; }
+.lista li:nth-child(3) .nivel { --enche: 28%; }
 
 .coluna h3 {
   font-size: 1.15rem;
